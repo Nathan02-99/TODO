@@ -1,0 +1,128 @@
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  width: 700px;
+  height: 500px;
+  background:rgba(55,65,81,1);
+  border-radius: 20px;
+  overflow-y: auto;
+}
+
+.container::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+.title {
+  text-align: center;
+  margin-top: 30px;
+  color: white;
+}
+
+#textbox {
+  margin-top: 5px;
+  margin-left: 40px;
+  width: 70%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+   background-color: #1F2937;
+   color: #ffffff;
+}
+
+
+
+#btn {
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: #A7A7A7;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.7s;
+}
+
+#btn:hover {
+  background-color: black;
+}
+
+#btn:hover span {
+  color: white;
+}
+
+#btn span {
+  transition: color 0.3s;
+}
+
+.button-container {
+    margin-top: 10px;
+    display: flex;
+
+}
+
+.button {
+    margin-top: 10px;
+    padding: 6px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.7s, color 0.7s;
+    width: 100px;
+}
+
+.button:nth-child(1) {
+    background-color: #0055FF;
+    margin-left: 40px;
+}
+
+.button:nth-child(2) {
+    background-color: #FBFF49;
+    color: black;
+    margin-left: 105px;
+}
+
+.button:nth-child(3) {
+    background-color: #4AFF0B;
+    color: black;
+    margin-left: 105px;
+}
+
+.line {
+    border: none;
+    border-top: 2px solid #fff;
+    margin: 20px 40px;
+}
+
+ul {
+  list-style-type:none;
+  padding: 40px;
+  margin: 0;
+}
+
+.task-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  font-style: normal;
+  background-color: #111827;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+
+.task-container input[type="checkbox"]:checked + label {
+  text-decoration: line-through;
+  font-style: italic;
+}
